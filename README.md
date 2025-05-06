@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# Database Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern database management interface built with React, TypeScript, and AWS Cloudscape Design System.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Browse database tables
+- View and filter table records
+- Create, update, and delete records
+- Responsive design using AWS Cloudscape Design System
+- Type-safe development with TypeScript
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js 14+ and npm
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```
+   git clone https://github.com/akkasali910/database-explorer.git
+   cd database-explorer
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+   ```
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Configuration
 
-### `npm run eject`
+The application connects to a REST API at:
+```
+https://4uqc08pq93.execute-api.eu-west-1.amazonaws.com/api/explorer
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To use a different API, update the `API_BASE_URL` in `src/services/dataService.ts`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `src/components/`: React components
+- `src/services/`: API and data services
+- `src/types/`: TypeScript interfaces
+- `src/utils/`: Utility functions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Key Components
 
-## Learn More
+- `TablesExplorer`: Main component that orchestrates the application
+- `TablesList`: Displays available database tables
+- `RecordsList`: Shows records in a selected table
+- `RecordDetails`: Displays and allows editing of a record
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT License
