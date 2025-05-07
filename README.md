@@ -40,7 +40,7 @@ A modern database management interface built with React, TypeScript, and AWS Clo
 
 The application connects to a REST API at:
 ```
-https://4uqc08pq93.execute-api.eu-west-1.amazonaws.com/api/explorer
+https://xxxxxxxxxx.execute-api.eu-west-1.amazonaws.com/api/explorer
 ```
 
 To use a different API, update the `API_BASE_URL` in `src/services/dataService.ts`.
