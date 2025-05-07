@@ -2,7 +2,7 @@ import axios from 'axios';
 import { TableMetadata, TableSchema, Record, ColumnMetadata } from '../types/types';
 
 // Using the full URL for the API
-const API_BASE_URL = 'https://4uqc08pq93.execute-api.eu-west-1.amazonaws.com/api/explorer';
+const API_BASE_URL = 'https://xxxxxxxxxx.execute-api.eu-west-1.amazonaws.com/api/explorer';
 
 // Enhanced axios instance with logging
 const api = axios.create({
